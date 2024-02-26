@@ -1,51 +1,40 @@
 /* Navbar styles */
 nav {
-    color: #fff; /* Set the text color */
-    padding: 10px 0; /* Add padding to the top and bottom */
     border-bottom: 1px solid black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
   }
   
-  ul {
+ul {
     list-style-type: none; /* Remove bullet points from the list */
-    padding: 0;
-    margin: 0;
-  }
+    display: flex;
+    justify-content: space-evenly;
+}
   
-  li {
-    display: inline-block; /* Display list items horizontally */
-    margin-right: 20px; /* Add spacing between list items */
-  }
+li {
+    /* margin-right: 20px; */
+}
   
   /* Style links */
-  a {
-    color: #fff; /* Set the text color */
-    text-decoration: none; /* Remove underline from links */
-    font-weight: bold; /* Set font weight to bold */
-  }
+.navlink {
+    text-decoration: none;
+    color: black; 
+}
+
   
-  /* Hover effect for links */
-  a:hover {
-    color: #ffd700; /* Change text color on hover */
-  }
   
-  /* Styling for each menu item */
-  .landing,
-  .about,
-  .projects {
-    padding: 5px 10px; /* Add padding inside menu items */
-    border-radius: 5px; /* Add rounded corners */
-  }
-  
-  /* Styling for specific menu items */
-  .landing {
-    background-color: #008080;
-     /* Set background color for landing */
-  }
-  
-  .about {
-    background-color: #ffa07a; /* Set background color for about */
-  }
-  
-  .projects {
-    background-color: #4682b4; /* Set background color for projects */
-  }
+.icon {
+}
+
+.landing {
+}
+
+.navelem {
+  flex-growth: 1;
+  border-radius: 5px;
+}
+
+.navlink:hover {
+  color: red;
+}

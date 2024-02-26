@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects: React.FC = () => (
     <div>
-        Landing
+        Projects
     </div >
 )
 
