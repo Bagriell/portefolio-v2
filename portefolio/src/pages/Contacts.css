@@ -1,5 +1,12 @@
-.main-container {
+.contact-container {
     display: grid;
-    grid-template-columns:
-    grid-template-rows;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    place-items: center;
+}
+GridElem {
+    margin-left: 10rem; 
+    margin-right: 10rem; 
+    justify-self: center;
+    background-color: red;
 }

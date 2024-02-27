@@ -1,0 +1,10 @@
+.grid-elem-container {
+    display: flex;
+    flex-direction: column;
+
+    justify-self: center;
+}
+
+.grid-elem-link {
+    font-size: 1.4rem;
+}

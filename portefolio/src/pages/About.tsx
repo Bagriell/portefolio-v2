@@ -1,8 +1,8 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import "./About.css"
 
-const About: React.FC = () => (
-    <div className="main-container">
+const About: React.FC = (): ReactElement => (
+    <div className="about-main-container">
         <h1>
             About
         </h1>
