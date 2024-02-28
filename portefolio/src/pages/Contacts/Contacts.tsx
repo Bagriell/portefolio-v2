@@ -13,7 +13,7 @@ const Contacts: React.FC = (): ReactElement => (
             <GridElem icon={<LinkedInIcon />} link="https://www.linkedin.com/in/gabriel-buetas-7a79031b9/" ></GridElem>
             <GridElem icon={<SmartphoneIcon />} link="06 74 28 07 39"></GridElem>
             <GridElem icon={<EmailIcon />} link="gabriel.buetas@gmail.com"></GridElem>
-            <GridElem icon={<LanguageIcon />} link="https://Bagriell.github.io"></GridElem>
+            <GridElem icon={<LanguageIcon />} link="https://bagriell.github.io/portefolio-v2/"></GridElem>
         </div>
     </div >
 )
