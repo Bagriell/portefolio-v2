@@ -1,8 +1,8 @@
 import React, { ReactElement } from "react";
-import "./About.css"
+import "./Landing.css"
 
-const About: React.FC = (): ReactElement => (
-    <div className="about-main-container">
+const Landing: React.FC = (): ReactElement => (
+    <div className="landing-main-container">
         <h1>
             About
         </h1>
@@ -18,4 +18,4 @@ const About: React.FC = (): ReactElement => (
     </div>
 )
 
-export default About;
+export default Landing;

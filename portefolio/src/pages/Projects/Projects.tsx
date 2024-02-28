@@ -2,7 +2,9 @@ import React from "react";
 
 const Projects: React.FC = () => (
     <div>
-        Projects
+        <h1>
+            Projects
+        </h1>
     </div >
 )
 

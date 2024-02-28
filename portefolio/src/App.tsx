@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-import Landing from './pages/Landing';
-import About from './pages/About';
-import Projects from './pages/Projects';
+import Landing from './pages/Landing/Landing';
+import Commpetencies from './pages/Competencies/Competencies';
+import Projects from './pages/Projects/Projects';
 import Navbar from './components/Navbar';
-import Contacts from './pages/Contacts';
+import Contacts from './pages/Contacts/Contacts';
+import Competencies from './pages/Competencies/Competencies';
 
 
 function App() {
@@ -17,7 +18,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/about" element={<About />} />
             <Route path="/contacts" element={<Contacts />} />
           </Routes>
         </div>

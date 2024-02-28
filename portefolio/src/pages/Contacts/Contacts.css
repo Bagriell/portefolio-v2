@@ -3,10 +3,9 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     place-items: center;
+    margin-left: 30rem; 
+    margin-right: 30rem;
 }
 GridElem {
-    margin-left: 10rem; 
-    margin-right: 10rem; 
-    justify-self: center;
-    background-color: red;
+   
 }

@@ -4,9 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, createBrowserRouter, RouterProvider } from "react-router-dom"
-import Landing from './pages/Landing';
-import About from './pages/About';
-import Projects from './pages/Projects';
+import Landing from './pages/Landing/Landing';
+import About from './pages/Competencies/Competencies';
+import Projects from './pages/Projects/Projects';
 
 
 
