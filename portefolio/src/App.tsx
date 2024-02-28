@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import { HashRouter as Router, Route, Routes } from "react-router-dom"
 import Landing from './pages/Landing/Landing';
 import Commpetencies from './pages/Competencies/Competencies';
 import Projects from './pages/Projects/Projects';
