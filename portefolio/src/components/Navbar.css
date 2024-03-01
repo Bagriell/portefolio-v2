@@ -1,28 +1,23 @@
 /* Navbar styles */
-nav {
+.navbar {
     border-bottom: 1px solid black;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    padding: 0.5vw;
   }
-  
-ul {
+
+.navitems {
     list-style-type: none; /* Remove bullet points from the list */
     display: flex;
     justify-content: space-evenly;
 }
   
-li {
-    /* margin-right: 20px; */
-}
-  
-  /* Style links */
 .navlink {
     text-decoration: none;
     color: black; 
 }
-
-  
+ 
   
 .icon {
 }
@@ -36,5 +31,5 @@ li {
 }
 
 .navlink:hover {
-  color: red;
+  color: #C0E5C8;
 }

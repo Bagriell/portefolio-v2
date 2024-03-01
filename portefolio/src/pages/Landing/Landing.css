@@ -1,14 +1,22 @@
 .landing-main-container {
     display: flex;
-    justify-content: center; 
+    justify-content: auto; 
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    padding: 20px;
 }
 
 .presentation {
-    font-size: 1.4rem;
-    margin-left: 30rem; 
-    margin-right: 30rem; 
+    font-size: 1.2rem;
+    margin-left: 20vw; 
+    margin-right: 20vw;
+    margin-top: 10vh;
 }
+
+@media only screen and (max-width: 600px) {
+    .presentation {
+        margin-left: 10vw; 
+        margin-right: 10vw;
+    }  
+} 
+

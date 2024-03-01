@@ -1,13 +1,11 @@
-.grid-elem-container {
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    border: 1px solid;
-    border-radius: 4px;    
-    justify-self: stretch;
-    padding: 10px;
-}
+ .grid-elem-container {
+   border: 1px solid;
+   border-radius: 4px;    
+ }
 
 .grid-elem-link {
-    font-size: 1rem;
+} 
+
+.grid-elem-container:hover {
+   background-color: #C0E5C8;
 }
