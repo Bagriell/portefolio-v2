@@ -1,6 +1,28 @@
 .grid-elem-project-container {
-    border: 1px solid;
-    border-radius: 4px;    
+  border: 1px solid;
+  border-radius: 4px;
+  margin: 10px;
+  flex: 1 0 25%;
+  box-sizing: border-box;
   }
 
-  
+  @media screen (max-width: 768px) {
+    .grid-elem-project-container {
+     /* 3 colonnes */
+       flex-basis: 33.33%; 
+    } 
+  }
+ 
+  @media screen (max-width: 480px) {
+   .grid-elem-project-container {
+     /* 2 colonnes */
+      flex-basis: 50%; 
+   } 
+ }
+ 
+  @media screen (max-width: 320px) {
+   .grid-elem-project-container {
+     /* 1 colonnes */
+      flex-basis: 100%;
+   } 
+ }
