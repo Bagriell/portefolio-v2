@@ -7,7 +7,7 @@ const csv = require("./projects.csv")
 interface Project {
     project_name: string,
     description: string,
-    tags: string[],
+    tags: string,
     link: string,
     tool: string
 }
