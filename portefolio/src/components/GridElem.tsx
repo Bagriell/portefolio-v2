@@ -25,7 +25,7 @@ function GridElem({ icon, link }: GridElemProps): ReactElement {
             setOpenToast(true)
         }}>
             <Snackbar
-                anchorOrigin={{ vertical: "top", horizontal: "center" }}
+                anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
                 open={openToast}
                 autoHideDuration={500}
                 onClose={handleClose}

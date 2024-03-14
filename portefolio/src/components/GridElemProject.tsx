@@ -7,33 +7,44 @@ interface GridElemProjectProps {
     project_name: string;
     description: string;
     tags: string;
-    img: any;
+    img?: string;
     link: string;
     tool: string
 }
 
 function GridElemProject({ project_name, description, tags, img, link, tool }: GridElemProjectProps): ReactElement {
     const render_tags = (label: string) => {
-        const labels = label.split(",")
+        const labels = label.split(",");
 
         return (
             labels.map((elem) => (
-                <Chip label={elem} size="small" variant="outlined" color="primary" />
+                <Chip label={elem} size="small" variant="outlined" color="primary" className="chips-label" key={elem + Math.random()} />
             ))
         )
 
     }
 
+    const render_tools = (tool: string) => {
+        const tools = tool.split(",");
+
+        return (
+            tools.map((elem) => (
+                <Chip label={elem} size="small" variant="outlined" color="error" className="chips-label" key={elem + Math.random()} />
+            ))
+        )
+    }
+
     return (
-        <div className="grid-elem-project-container">
-            <img src={img} alt="project image" width={200}></img>
-            <div>{project_name}</div>
-            <Stack>
+        <div className="grid-elem-project-container" onClick={() => { window.location.href = link }}>
+            <img src={img} alt="project cover" width={"auto"} height={"100px"} className="grid-elem-img"></img>
+            <div className="grid-elem-project-title">{project_name}</div>
+            <Stack direction="row" justifyContent="center">
                 {render_tags(tags)}
             </Stack>
-            <div>{tool}</div>
-            <div>{link}</div>
-            <p>{description}</p>
+            <Stack direction={"row"} justifyContent={"center"}>
+                {render_tools(tool)}
+            </Stack>
+            <p className="decription">{description}</p>
         </div >
     )
 }

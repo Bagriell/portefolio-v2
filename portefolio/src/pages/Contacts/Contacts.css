@@ -2,24 +2,3 @@
     display: flex;
     flex-wrap: wrap;
 }
-
-
-/* .contact-container {
-    display: grid;
-    flex-wrap: wrap;
-    grid-gap: 1vh;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-
-    font-size: 1rem;
-    margin-left: 20vw; 
-    margin-right: 20vw;
-    margin-top: 10vh;
-}
-
-@media only screen and (max-width: 600px) {
-    .contact-container {
-        margin-left: 10vw; 
-        margin-right: 10vw;
-
-    }  
-} */

@@ -7,16 +7,16 @@ const csv = require("./projects.csv")
 interface Project {
     project_name: string,
     description: string,
+    img?: string,
     tags: string,
     link: string,
     tool: string
 }
-const csv_path = "/portefolio/public/project.csv"
+const default_img = "https://cdn.textstudio.com/output/sample/normal/9/1/6/5/project-logo-860-5619.png"
 
 
 const Projects = () => {
     const [projects, setProjects] = useState<Project[]>([]);
-    console.log(projects)
 
     useEffect(() => {
         load_projects();
@@ -29,9 +29,10 @@ const Projects = () => {
                 <GridElemProject project_name={project.project_name}
                     description={project.description}
                     tags={project.tags}
-                    img="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Noun_Project_list_icon_119366_cc.svg/800px-Noun_Project_list_icon_119366_cc.svg.png"
+                    img={project.img ? project.img : default_img}
                     link={project.link}
                     tool={project.tool}
+                    key={project.project_name}
                 ></GridElemProject>
             ))
         )

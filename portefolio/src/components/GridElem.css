@@ -7,6 +7,8 @@
   box-sizing: border-box;
   margin: 10px;
   flex-basis: 25%;
+  transition: all .2s ease-in-out; 
+  background-color:white;
  }
 
  @media screen (max-width: 768px) {
@@ -33,5 +35,8 @@
 
 
 .grid-elem-container:hover {
-   background-color: #C0E5C8;
+  transform: scale(1.05);
+  z-index: 1;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed
 }
