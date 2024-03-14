@@ -1,6 +1,0 @@
-project_name,description,tags,link,tool,img
-product recommender,Cli based software that analyse user data and propose a recommendation based on his data.,"ai,data",https://github.com/Bagriell/EPITECH_Recommender,"python,typer,scikit-learn",https://raw.githubusercontent.com/Bagriell/EPITECH_Recommender/main/assets/cadeau.jpg
-image compressor,Server that compress images with kmeans algo.,computer vison,https://github.com/Bagriell/Compression-kmeans,"python,flask,scikit-learn",https://raw.githubusercontent.com/Bagriell/Compression-kmeans/main/kmeans_output.png
-Doormate,Mobile application to match roomate based on their profile.,"mobile,ai,server",https://play.google.com/store/apps/details?id=com.croomer.DoorMate&hl=fr_CA&pli=1,"python,javascriptdjango,scikit-learn,react-native",https://play-lh.googleusercontent.com/EQ4kBAn-ydm5kzscrNJ6flY7zU7MJjufQTo98Y574UzExoWx9EW_44kZppg7EvK8j8s=w526-h296-rw
-folio,Website you are in.,front,https://github.com/Bagriell/portefolio-v2,"react,typescript",
-Pneumonia classification,Model classifyng x-ray images to detect pneumonia.,computer vision,https://github.com/Bagriell/EPITECH_Pneumonia_classification,"python,tensorflow, scikit-learn",https://cdn.punchng.com/wp-content/uploads/2022/12/09103227/Pneumonia.jpg
