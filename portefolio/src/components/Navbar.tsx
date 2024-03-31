@@ -1,30 +1,30 @@
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import HomeIcon from '@mui/icons-material/Home';
-import "./Navbar.css"
+import styles from "./Navbar.module.css"
 
 
 function Navbar() {
 
     return (
-        <nav className="navbar">
-            <ul className="navitems">
-                <li className="navelem icon">
+        <nav className={styles.navbar}>
+            <ul className={styles.navitems}>
+                <li className={`${styles.navelem} ${styles.icon}`}>
                     <div>
-                        <Link to="/" className="navlink">
+                        <Link to="/" className={styles.navlink}>
                             <HomeIcon fontSize="large"></HomeIcon>
                         </Link>
                     </div>
                 </li>
-                <li className="navelem">
-                    <div className="projects" >
-                        <Link to="/projects" className="navlink">
+                <li className={styles.navelem}>
+                    <div className={styles.projects} >
+                        <Link to="/projects" className={styles.navlink}>
                             projects
                         </Link>
                     </div>
                 </li>
-                <li className="navelem">
-                    <div className="contacts" >
-                        <Link to="/contacts" className="navlink">
+                <li className={styles.navelem}>
+                    <div className={styles.contacts} >
+                        <Link to="/contacts" className={styles.navlink}>
                             contacts
                         </Link>
                     </div>

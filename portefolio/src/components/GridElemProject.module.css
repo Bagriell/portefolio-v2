@@ -1,4 +1,4 @@
-.grid-elem-project-container {
+.gridElemContainer {
   border-radius: 10px;
   flex: 0 0 calc(33.333% - 20px);
   max-width: 100%;
@@ -8,7 +8,7 @@
   transition: all .2s ease-in-out; 
   }
 
-.grid-elem-project-container:hover {
+.gridElemContainer:hover {
   transform: scale(1.1);
   border-color: #9ecaed;
   box-shadow: 0 0 10px #9ecaed;
@@ -17,12 +17,12 @@
 }
 
 @media screen and (max-width: 768px) {
-  .grid-elem-project-container {
+  .gridElemContainer {
       flex-basis: calc(50% - 20px); 
     }
 }
 
-.chips-label {
+.chipsLabel {
   margin: 5px;
 }
 
@@ -30,11 +30,11 @@
   word-break: break-all;
 }
 
-.grid-elem-img {
+.gridElemImg {
   max-width: 50%;
 }
 
-.grid-elem-project-title {
+.gridElemTitle {
   font-weight: bold;
   font-size: 1.5rem;
 }

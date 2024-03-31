@@ -1,12 +1,12 @@
 import React, { ReactElement } from "react";
-import "./Landing.css"
+import styles from "./Landing.module.css"
 
 const Landing: React.FC = (): ReactElement => (
     <div className="landing-main-container">
         <h1>
             About
         </h1>
-        <p className="presentation">
+        <p className={styles.presentation}>
             Hello dear visitor 👋! <br />
             I'm Gabriel and I'm software developer currently living in Montpellier, France.
             Tech enthusiast with a Python syndrom and always looking for new projects.

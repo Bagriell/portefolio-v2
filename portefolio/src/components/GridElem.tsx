@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import "./GridElem.css"
+import styles from "./GridElem.module.css"
 import Snackbar from '@mui/material/Snackbar';
 
 
@@ -20,7 +20,7 @@ function GridElem({ icon, link }: GridElemProps): ReactElement {
     };
 
     return (
-        <div className="grid-elem-container" onClick={(event) => {
+        <div className={styles.gridElemContainer} onClick={(event) => {
             navigator.clipboard.writeText(link)
             setOpenToast(true)
         }}>
@@ -34,7 +34,7 @@ function GridElem({ icon, link }: GridElemProps): ReactElement {
             <div>
                 {icon}
             </div>
-            <div className="grid-elem-link">
+            <div className={styles.gridElemLink}>
                 {link}
             </div>
         </div>

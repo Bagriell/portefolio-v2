@@ -1,20 +1,18 @@
 import React from 'react';
-import './App.css';
+import styles from './App.module.css';
 import { HashRouter as Router, Route, Routes } from "react-router-dom"
 import Landing from './pages/Landing/Landing';
-import Commpetencies from './pages/Competencies/Competencies';
 import Projects from './pages/Projects/Projects';
 import Navbar from './components/Navbar';
 import Contacts from './pages/Contacts/Contacts';
-import Competencies from './pages/Competencies/Competencies';
 
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className={styles.App}>
         <Navbar />
-        <div className='container-body'>
+        <div className={styles.containerBody}>
           <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/projects" element={<Projects />} />

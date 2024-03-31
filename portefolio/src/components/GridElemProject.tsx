@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import "./GridElemProject.css"
+import styles from "./GridElemProject.module.css"
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 
@@ -18,7 +18,7 @@ function GridElemProject({ project_name, description, tags, img, link, tool }: G
 
         return (
             labels.map((elem) => (
-                <Chip label={elem} size="small" variant="outlined" color="primary" className="chips-label" key={elem + Math.random()} />
+                <Chip label={elem} size="small" variant="outlined" color="primary" className={styles.chipsLabel} key={elem + Math.random()} />
             ))
         )
 
@@ -29,22 +29,22 @@ function GridElemProject({ project_name, description, tags, img, link, tool }: G
 
         return (
             tools.map((elem) => (
-                <Chip label={elem} size="small" variant="outlined" color="error" className="chips-label" key={elem + Math.random()} />
+                <Chip label={elem} size="small" variant="outlined" color="error" className={styles.chipsLabel} key={elem + Math.random()} />
             ))
         )
     }
 
     return (
-        <div className="grid-elem-project-container" onClick={() => { window.location.href = link }}>
-            <img src={img} alt="project cover" width={"auto"} height={"100px"} className="grid-elem-img"></img>
-            <div className="grid-elem-project-title">{project_name}</div>
+        <div className={styles.gridElemContainer} onClick={() => { window.location.href = link }}>
+            <img src={img} alt="project cover" width={"auto"} height={"100px"} className={styles.gridElemImg}></img>
+            <div className={styles.gridElemTitle}>{project_name}</div>
             <Stack direction="row" justifyContent="center">
                 {render_tags(tags)}
             </Stack>
             <Stack direction={"row"} justifyContent={"center"}>
                 {render_tools(tool)}
             </Stack>
-            <p className="decription">{description}</p>
+            <p className={styles.description}>{description}</p>
         </div >
     )
 }

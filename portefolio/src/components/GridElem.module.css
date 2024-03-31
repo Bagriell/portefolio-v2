@@ -1,4 +1,4 @@
- .grid-elem-container {
+ .gridElemContainer {
    border: 1px solid;
    border-radius: 4px;   
    
@@ -12,21 +12,21 @@
  }
 
  @media screen (max-width: 768px) {
-   .grid-elem-container {
+   .gridElemContainer {
     /* 3 colonnes */
       flex-basis: 33.33%; 
    } 
  }
 
  @media screen (max-width: 480px) {
-  .grid-elem-container {
+  .gridElemContainer {
     /* 2 colonnes */
      flex-basis: 50%; 
   } 
 }
 
  @media screen (max-width: 320px) {
-  .grid-elem-container {
+  .gridElemContainer {
     /* 1 colonnes */
      flex-basis: 100%;
   } 
@@ -34,9 +34,11 @@
 
 
 
-.grid-elem-container:hover {
+.gridElemContainer:hover {
   transform: scale(1.05);
   z-index: 1;
   border-color: #9ecaed;
   box-shadow: 0 0 10px #9ecaed
 }
+
+.gridElemLink {}
