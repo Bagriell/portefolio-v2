@@ -1,6 +1,6 @@
-import React, { ReactElement } from "react";
+import { ReactElement } from "react";
 
-const Competencies: React.FC = (): ReactElement => (
+const Competencies = (): ReactElement => (
     <div className="competencies-main-container">
         <h1>
             Competencies

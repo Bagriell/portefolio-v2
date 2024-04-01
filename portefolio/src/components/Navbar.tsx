@@ -6,7 +6,7 @@ import styles from "./Navbar.module.css"
 function Navbar() {
 
     return (
-        <nav className={styles.navbar}>
+        <nav className={styles.navbar}  >
             <ul className={styles.navitems}>
                 <li className={`${styles.navelem} ${styles.icon}`}>
                     <div>

@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './App.module.css';
 import { HashRouter as Router, Route, Routes } from "react-router-dom"
 import Landing from './pages/Landing/Landing';
@@ -10,7 +9,7 @@ import Contacts from './pages/Contacts/Contacts';
 function App() {
   return (
     <Router>
-      <div className={styles.App}>
+      <div className={styles.App} >
         <Navbar />
         <div className={styles.containerBody}>
           <Routes>

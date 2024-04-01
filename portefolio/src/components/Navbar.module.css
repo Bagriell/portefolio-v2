@@ -1,10 +1,15 @@
 /* Navbar styles */
 .navbar {
-    border-bottom: 1px solid black;
+    position: sticky;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
     padding: 0.5vw;
+    top: 0;
+    background: rgb(246,252,252);
+    background: linear-gradient(90deg, rgba(246,252,252,1) 0%, rgba(28,173,179,0.8) 100%);
+
   }
 
 .navitems {
@@ -31,5 +36,6 @@
 }
 
 .navlink:hover {
-  color: #C0E5C8;
+  color: red;
+  text-shadow: 0 0 5px red;
 }

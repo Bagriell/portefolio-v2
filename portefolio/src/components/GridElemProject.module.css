@@ -6,10 +6,11 @@
   margin: 10px;
   padding-bottom: 5px;
   transition: all .2s ease-in-out; 
+  text-align: center;
   }
 
 .gridElemContainer:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   border-color: #9ecaed;
   box-shadow: 0 0 10px #9ecaed;
   background-color: white;

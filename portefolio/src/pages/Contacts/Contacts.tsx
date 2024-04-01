@@ -6,7 +6,7 @@ import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-const Contacts: React.FC = (): ReactElement => (
+const Contacts = (): ReactElement => (
     <div>
         <h1>Contacts</h1>
         <div className={styles.container}>
